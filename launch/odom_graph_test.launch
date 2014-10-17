@@ -1,0 +1,7 @@
+<launch>
+
+	<node pkg="ros101" type="random_driver" name="random_driver" />
+	<node pkg="ros101" type="odom_graph.py" name="odom_graph" />
+
+
+</launch>
