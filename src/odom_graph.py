@@ -34,9 +34,7 @@ def listener():
 
 	rospy.init_node('odom_graph', anonymous=True)
 
-#     changed publish to read "husky_velocity_controller/cmd_vel"
-#     change repairs issues under indigo 
-	rospy.Subscriber("husky_velocity_controller/odom", Odometry, odomCB)
+	rospy.Subscriber("odom", Odometry, odomCB)
 
 	rospy.spin()
 
