@@ -34,7 +34,7 @@ def listener():
 
 	rospy.init_node('odom_graph', anonymous=True)
 
-	rospy.Subscriber("odom", Odometry, odomCB)
+	rospy.Subscriber("husky_velocity_controller/odom", Odometry, odomCB)
 
 	rospy.spin()
 
