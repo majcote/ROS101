@@ -9,9 +9,7 @@ int main(int argc, char **argv) {
 
      //Ceates the publisher, and tells it to publish
      //to the husky/cmd_vel topic, with a queue size of 100
-     // changed publish to read /husky_velocity_controller/cmd_vel
-     // change repairs issues under indigo 
-     ros::Publisher pub=nh.advertise<geometry_msgs::Twist>("husky_velocity_controller/cmd_vel", 100);
+     ros::Publisher pub=nh.advertise<geometry_msgs::Twist>("husky/cmd_vel", 100);
 
      //Sets up the random number generator
      srand(time(0));
